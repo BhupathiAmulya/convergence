@@ -1,0 +1,16 @@
+.i{
+    float:right;
+}
+li{
+    list-style-type: none;
+}
+.heading{
+    color:rgb(255, 142, 238)
+}
+.tag{
+    color:rgb(255, 207, 232)
+}
+.link{
+    text-decoration: none;
+    color: brown;
+}

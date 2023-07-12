@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Berkshire+Swash&family=Crimson+Text:wght@600&family=Dancing+Script&family=Kanit:wght@300&family=Leckerli+One&family=Lilita+One&family=Montserrat:wght@200;400;500&family=Mukta:wght@300&family=Pacifico&family=Playball&family=Poppins:wght@300&family=Righteous&family=Rokkitt&family=Rubik+Puddles&family=Solway&family=Yatra+One&display=swap');
+.content{
+    font-family: 'Yatra One', cursive;
+    color:rgb(231, 167, 232);
+    margin-bottom:200px ;
+}
+.grab{
+    color:rgb(231, 167, 232); 
+}
+.b{
+    text-decoration: none;
+    color: white;
+}

@@ -1,25 +1,61 @@
-import logo from './logo.svg';
+import Hackathons from './Components/Hackathons/Hackathons';
+import Robotics from './Components/Robotics/Robotics';
+
+import Workshops from './Components/Workshops/Workshops';
+import Home from './Components/Home/Home';
+import OtherEvents from './Components/OtherEvents/OtherEvents';
+import Contests from './Components/Contests/Contests';
 import './App.css';
+import RootLayout from './Components/RootLayout';
+import {createBrowserRouter,RouterProvider} from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
+  const router=createBrowserRouter([
+    {
+      path:"/",
+      element:<RootLayout/>,
+      children:[
+        {
+          path:"/Home",
+          element:<Home/>
+        },
+        {
+          path:"/",
+          element:<Home/>
+        },
+        {
+          path:"/Hackathons",
+          element:<Hackathons/>
+        },
+     
+
+        {
+          path:"/Contests",
+          element:<Contests/>
+        },
+        {
+          path:"/Workshops",
+          element:<Workshops/>
+        },
+        {
+          path:"/Robotics",
+          element:<Robotics/>
+        },
+        
+        {
+          path:"/OtherEvents",
+          element:<OtherEvents/>
+        },
+        
+      ],
+    },
+  ]);
+
+  return(
+    <div className="App">
+      <RouterProvider router={router}/>
+    </div>
+  )
+  }
 export default App;
